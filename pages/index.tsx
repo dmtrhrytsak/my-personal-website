@@ -49,7 +49,7 @@ const Home: NextPage<HomeProps> = ({ userInfo, skills, projects }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch('https://api.github.com/users/dmtrhrytsak');
-  const userInfo = await response.json();
+  const userInfo: IUserInfo = await response.json();
 
   return {
     props: {

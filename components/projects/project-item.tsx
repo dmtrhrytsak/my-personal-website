@@ -1,5 +1,14 @@
 import { IProject } from '../../types/project';
 
+const colors = [
+  'bg-indigo-500',
+  'bg-violet-500',
+  'bg-rose-500',
+  'bg-fuchsia-500',
+  'bg-blue-500',
+  'bg-lime-500',
+];
+
 type ProjectItemProps = {
   count: number;
 } & IProject;
@@ -10,12 +19,13 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   technologies,
   gitHub,
   preview,
-  color,
 }) => {
   return (
     <article>
       <div
-        className={`block p-24 mb-3 rounded-md ${color} text-center text-2xl text-white md:p-32 lg:p-40`}
+        className={`block p-24 mb-3 rounded-md ${
+          colors[count - 1]
+        } text-center text-2xl text-white md:p-32 lg:p-40`}
       >
         Project {count}
       </div>

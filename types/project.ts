@@ -3,5 +3,4 @@ export interface IProject {
   technologies: string[];
   gitHub: string;
   preview: string;
-  color: string;
 }
