@@ -24,15 +24,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         swiping={true}
         className="relative"
       >
-        {projects.map(({ name, technologies, gitHub, preview, color }, idx) => (
+        {projects.map(({ name, technologies, gitHub, preview }, idx) => (
           <ProjectItem
             key={gitHub}
-            count={idx + 1}
+            count={idx}
             name={name}
             technologies={technologies}
             gitHub={gitHub}
             preview={preview}
-            color={color}
           />
         ))}
       </Carousel>
