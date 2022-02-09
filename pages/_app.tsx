@@ -1,8 +1,21 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+
+import Layout from '../components/layout';
+import { DarkModeProvider } from '../contexts/dark-mode-context';
+import { ModalProvider } from '../contexts/popup-modal-context';
+
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <DarkModeProvider>
+      <ModalProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ModalProvider>
+    </DarkModeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
