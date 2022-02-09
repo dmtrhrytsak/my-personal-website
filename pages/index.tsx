@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import type { NextPage, GetStaticProps } from 'next';
-import axios from 'axios';
 
 import ProfileInfo from '../components/profile-info';
 import { Skills } from '../components/skills/';
 import { Projects } from '../components/projects';
-
 import ScrollTop from '../components/scroll-top';
+import { skills } from '../lib/api/skills';
+import { projects } from '../lib/api/projects';
 
 import { IUserInfo } from '../types/user-info';
 import { ISkills } from '../types/skill';
@@ -48,28 +48,14 @@ const Home: NextPage<HomeProps> = ({ userInfo, skills, projects }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const BASE_URL =
-    process.env.VERCEL_URL === 'http://localhost:3000'
-      ? 'http://localhost:3000'
-      : `https://${process.env.VERCEL_URL}`;
-
-  const userInfoReq = axios.get<IUserInfo>(
-    'https://api.github.com/users/dmtrhrytsak'
-  );
-  const skillsReq = axios.get<ISkills[]>(`${BASE_URL}/api/skills`);
-  const projectsReq = axios.get<IProject[]>(`${BASE_URL}/api/projects`);
-
-  const [userInfo, skills, projects] = await Promise.all([
-    userInfoReq,
-    skillsReq,
-    projectsReq,
-  ]);
+  const response = await fetch('https://api.github.com/users/dmtrhrytsak');
+  const userInfo = await response.json();
 
   return {
     props: {
-      userInfo: userInfo.data,
-      skills: skills.data,
-      projects: projects.data,
+      userInfo,
+      skills,
+      projects,
     },
   };
 };

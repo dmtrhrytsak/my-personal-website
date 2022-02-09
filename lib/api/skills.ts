@@ -1,8 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
 import { ISkills } from '../../types/skill';
 
-const skills: ISkills[] = [
+export const skills: ISkills[] = [
   {
     category: 'Frontend Languages',
     items: [
@@ -75,10 +73,3 @@ const skills: ISkills[] = [
     items: ['UI/UX Design'],
   },
 ];
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<ISkills[]>
-) {
-  res.status(200).json(skills);
-}

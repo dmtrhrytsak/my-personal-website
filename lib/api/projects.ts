@@ -1,8 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-
 import { IProject } from '../../types/project';
 
-const projects: IProject[] = [
+export const projects: IProject[] = [
   {
     name: 'Coronavirus Tracker | React App',
     technologies: ['React', 'TypeScript', 'Styled Components'],
@@ -46,10 +44,3 @@ const projects: IProject[] = [
     color: 'bg-lime-500',
   },
 ];
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<IProject[]>
-) {
-  res.status(200).json(projects);
-}
