@@ -1,6 +1,7 @@
 ## Personal Website | Next.js
 ### Technologies: 
 - Next.js
+- React
 - TypeScript
 - Tailwind CSS
 
