@@ -17,7 +17,7 @@ const ThemeSwitcher = () => {
       )}
       onClick={toggleDarkMode}
     >
-      <div className="animate-ping-finite absolute h-5 w-5 rounded-full bg-blue-500 opacity-75"></div>
+      <div className="animate-ping-finite absolute h-6 w-6 rounded-full bg-blue-500 opacity-75"></div>
       {isDarkMode ? (
         <HiSun className="text-2xl" />
       ) : (
