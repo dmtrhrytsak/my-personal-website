@@ -7,26 +7,13 @@ import ThemeSwitcher from './theme-switcher';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMenuClosing, setIsMenuClosing] = useState(false);
 
-  const openMenu = () => {
-    setIsMenuOpen(true);
-    setIsMenuClosing(false);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    setIsMenuClosing(true);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div
-      className={classNames(
-        'fixed z-10 right-[theme(space.6)] md:right-[theme(space.8)] flex items-center gap-6',
-        { 'animate-expend': isMenuOpen },
-        { 'animate-close': isMenuClosing }
-      )}
-    >
+    <div className="fixed z-10 right-[theme(space.6)] md:right-[theme(space.8)] flex items-center gap-8">
       <div
         className={classNames(
           'p-2 rounded-full cursor-pointer bg-gray-200 outline outline-offset-2 outline-2 outline-transparent',
@@ -34,9 +21,9 @@ const Menu = () => {
             'outline-cyan-500': isMenuOpen,
           }
         )}
-        onClick={isMenuOpen ? closeMenu : openMenu}
+        onClick={toggleMenu}
       >
-        <HiMenuAlt4 className="text-xl" />
+        <HiMenuAlt4 className="text-2xl" />
       </div>
 
       {isMenuOpen && (

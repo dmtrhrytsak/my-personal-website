@@ -19,9 +19,9 @@ const ThemeSwitcher = () => {
     >
       <div className="animate-ping-finite absolute h-5 w-5 rounded-full bg-blue-500 opacity-75"></div>
       {isDarkMode ? (
-        <HiSun className="text-xl" />
+        <HiSun className="text-2xl" />
       ) : (
-        <MdModeNight className="text-xl" />
+        <MdModeNight className="text-2xl" />
       )}
     </li>
   );

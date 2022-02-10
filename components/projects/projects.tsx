@@ -22,7 +22,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         }
         swipeOn={0.1}
         swiping={true}
-        className="relative"
+        className="relative h-[450px]"
       >
         {projects.map(({ name, technologies, gitHub, preview }, idx) => (
           <ProjectItem
