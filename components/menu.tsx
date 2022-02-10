@@ -16,9 +16,9 @@ const Menu = () => {
     <div className="fixed z-10 right-[theme(space.6)] md:right-[theme(space.8)] flex items-center gap-8">
       <div
         className={classNames(
-          'p-2 rounded-full cursor-pointer bg-gray-200 outline outline-offset-2 outline-2 outline-transparent',
+          'p-2 rounded-full cursor-pointer bg-gray-200 ring-offset-2',
           {
-            'outline-cyan-500': isMenuOpen,
+            'ring-2 ring-transparent ring-cyan-500': isMenuOpen,
           }
         )}
         onClick={toggleMenu}
