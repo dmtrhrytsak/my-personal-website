@@ -23,7 +23,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   return (
     <article>
       <div
-        className={`block p-24 mb-3 rounded-md ${colors[count]} text-center text-2xl text-white md:p-32 lg:p-40`}
+        className={`block p-24 mb-3 rounded-md ${
+          colors[count % colors.length]
+        } text-center text-2xl text-white md:p-32 lg:p-40`}
       >
         Project {count + 1}
       </div>

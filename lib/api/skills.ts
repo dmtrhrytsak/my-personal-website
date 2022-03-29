@@ -6,10 +6,12 @@ export const skills: ISkills[] = [
     items: [
       'Typescript',
       'JavaScript',
+      'Node.js',
       'Sass (SCSS)',
       'Styled Components',
       'CSS Modules',
       'Tailwind',
+      'Chakra UI',
       'CSS',
       'HTML',
       'Async',
@@ -17,7 +19,7 @@ export const skills: ISkills[] = [
   },
   {
     category: 'Frameworks',
-    items: ['React', 'Gatsby', 'Next.js', 'Redux', 'Express'],
+    items: ['React', 'Next.js', 'Gatsby', 'Redux/Redux Toolkit', 'Express'],
   },
   {
     category: 'Task and Project Management',
@@ -34,6 +36,7 @@ export const skills: ISkills[] = [
       'Visual Studio Code',
       'CI/CD',
       'AWS',
+      'Google Cloud',
     ],
   },
   {
@@ -46,15 +49,12 @@ export const skills: ISkills[] = [
       'OOP',
       'Data Structure',
       'Algorithms',
-      'Basics of Java',
-      'C#',
-      'C++',
-      'Python',
+      'Basics of Java, C#, C++, Python',
     ],
   },
   {
     category: 'Architecture',
-    items: ['UML', 'API'],
+    items: ['UML', 'REST', 'API'],
   },
   {
     category: 'DevOps',
@@ -62,7 +62,7 @@ export const skills: ISkills[] = [
   },
   {
     category: 'Databases',
-    items: ['MongoDB'],
+    items: ['SQL', 'PostgreSQL', 'MongoDB'],
   },
   {
     category: 'English',
