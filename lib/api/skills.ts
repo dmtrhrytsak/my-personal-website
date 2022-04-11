@@ -2,7 +2,7 @@ import { ISkills } from '../../types/skill';
 
 export const skills: ISkills[] = [
   {
-    category: 'Frontend Languages',
+    category: 'Frontend Technologies',
     items: [
       'Typescript',
       'JavaScript',
@@ -11,6 +11,7 @@ export const skills: ISkills[] = [
       'Styled Components',
       'CSS Modules',
       'Tailwind',
+      'Material UI',
       'Chakra UI',
       'CSS',
       'HTML',
@@ -19,7 +20,14 @@ export const skills: ISkills[] = [
   },
   {
     category: 'Frameworks',
-    items: ['React', 'Next.js', 'Gatsby', 'Redux/Redux Toolkit', 'Express'],
+    items: [
+      'React',
+      'Next.js',
+      'Gatsby',
+      'Redux/Redux Toolkit',
+      'Express',
+      'NestJS',
+    ],
   },
   {
     category: 'Task and Project Management',
