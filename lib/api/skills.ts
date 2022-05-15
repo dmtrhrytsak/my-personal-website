@@ -2,7 +2,7 @@ import { ISkills } from '../../types/skill';
 
 export const skills: ISkills[] = [
   {
-    category: 'Frontend Technologies',
+    category: 'Technologies',
     items: [
       'Typescript',
       'JavaScript',
@@ -16,6 +16,7 @@ export const skills: ISkills[] = [
       'CSS',
       'HTML',
       'Async',
+      'Web Sockets',
     ],
   },
   {
@@ -42,9 +43,6 @@ export const skills: ISkills[] = [
       'Figma',
       'Photoshop',
       'Visual Studio Code',
-      'CI/CD',
-      'AWS',
-      'Google Cloud',
     ],
   },
   {
@@ -55,6 +53,7 @@ export const skills: ISkills[] = [
     category: 'Programming Paradigms',
     items: [
       'OOP',
+      'Functional programming',
       'Data Structure',
       'Algorithms',
       'Basics of Java, C#, C++, Python',
@@ -62,15 +61,27 @@ export const skills: ISkills[] = [
   },
   {
     category: 'Architecture',
-    items: ['UML', 'REST', 'API'],
-  },
-  {
-    category: 'DevOps',
-    items: ['Windows', 'Mac OS', 'TCP/IP', 'HTTP', 'HTTP/2', 'WebSockets'],
+    items: ['MVC', 'SOLID', 'REST', 'API'],
   },
   {
     category: 'Databases',
-    items: ['SQL', 'PostgreSQL', 'MongoDB'],
+    items: [
+      'Database design',
+      'SQL',
+      'SQLite',
+      'PostgreSQL',
+      'MongoDB',
+      'Mongoose',
+      'TypeORM',
+      'Sequelize',
+      'Migrations',
+      'Seeds',
+      'Transactions',
+    ],
+  },
+  {
+    category: 'DevOps',
+    items: ['AWS', 'Google Cloud', 'Heroku', 'Firebase', 'CI/CD'],
   },
   {
     category: 'English',
