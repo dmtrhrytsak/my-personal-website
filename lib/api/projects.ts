@@ -15,6 +15,17 @@ export const projects: IProject[] = [
     preview: 'https://expense-tracker-with-firebase.vercel.app',
   },
   {
+    name: 'Trello Clone',
+    technologies: [
+      'React',
+      'Typescript',
+      'Redux/Redux Toolkit',
+      'Tailwind CSS',
+    ],
+    gitHub: 'https://github.com/dmtrhrytsak/my-awkward-trello',
+    preview: 'https://dmtrhrytsak.github.io/my-awkward-trello/',
+  },
+  {
     name: 'Next Weather | Next.js App',
     technologies: ['Next.js', 'React', 'CSS Modules'],
     gitHub: 'https://github.com/dmtrhrytsak/next-weather-app',
